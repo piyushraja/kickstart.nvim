@@ -583,7 +583,6 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        'gofumpt',
         'black',
         'debugpy',
         'flake8',
@@ -592,6 +591,8 @@ require('lazy').setup({
         'mypy',
         'pylint',
         'dockerfile-language-server',
+        'gofumpt',
+        'golangci-lint',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

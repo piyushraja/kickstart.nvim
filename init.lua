@@ -583,9 +583,11 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'gofumpt',
         'black',
         'debugpy',
         'flake8',
+        'autopep8',
         'isort',
         'mypy',
         'pylint',
@@ -594,7 +596,9 @@ require('lazy').setup({
 
       require('mason-lspconfig').setup {
         ensure_installed = {
+          'gopls',
           'pyright',
+          'dockerfile-language-server',
         },
         handlers = {
           function(server_name)

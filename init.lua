@@ -590,9 +590,9 @@ require('lazy').setup({
         'isort',
         'mypy',
         'pylint',
-        'dockerfile-language-server',
         'gofumpt',
         'golangci-lint',
+        'prettier',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -600,6 +600,9 @@ require('lazy').setup({
         ensure_installed = {
           'gopls',
           'pyright',
+          'tsserver',
+          'eslint',
+          'dockerls',
         },
         handlers = {
           function(server_name)

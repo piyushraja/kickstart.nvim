@@ -838,8 +838,8 @@ require('lazy').setup({
     opts = {
       transparent = true,
       styles = {
-        sidebars = "transparent",
-        floats = "transparent",  
+        sidebars = 'transparent',
+        floats = 'transparent',
       }
     },
     init = function()

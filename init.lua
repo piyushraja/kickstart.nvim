@@ -840,7 +840,7 @@ require('lazy').setup({
       styles = {
         sidebars = 'transparent',
         floats = 'transparent',
-      }
+      },
     },
     init = function()
       -- Load the colorscheme here.
